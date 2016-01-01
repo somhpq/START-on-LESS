@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample - LESS Built-In</title>
+        <link rel="stylesheet" type="text/css" href="site.css">
+    </head>
+    <body>
+        <header>
+            <h1>Sample - LESS Built-In</h1>
+        </header>
+        <div>
+            <h4>This is h4 - Lighten</h4>
+            <h3>This is h3 - Lighten</h3>
+            <h2>This is h2 - Lighten</h2>
+            <h1>This is h1 - Lighten</h1>
+        </div>
+        <div>
+            <p id="myp">
+            Use of some LESS built-in function
+            <pre>border-color: hsl(hue(@color), 45%, 60%);</pre>
+            </p>
+        </div>
+        <div>
+            <p id="myp">
+            Use of some LESS Mixins / Custom function
+            <pre>
+            .border-radius(@radius: 5px, @borderColor: @color) {
+            -mox-border-radius: @radius;
+            -webkit-border-radius: @radius;
+            -ms-border-radius: @radius;
+            border-radius: @radius;
+            border: 1px solid @color;
+            }
+            </pre>
+            </p>
+        </div>
+    </body>
+</html>
